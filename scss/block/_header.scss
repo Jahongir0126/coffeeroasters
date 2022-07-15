@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    top: 0px;
+    width: 1280px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-left: -640px;
+    z-index: 2;
+    background-color: #F2F2F2;
+
+
+ 
+}
+.logo{
+    margin-left: 8px;
+}
+.nav{
+    margin-left: auto;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__item + .nav__item{
+    margin-left: 33px;
+    
+}
+
+.nav__link{
+    text-decoration: none;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F; 
+}
+.nav__link:hover{
+    color: rgb(0, 0, 0);
+}
