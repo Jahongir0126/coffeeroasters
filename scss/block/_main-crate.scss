@@ -8,6 +8,22 @@
     margin-top: 150px;
 
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+
+    .section5{
+        background: url(../img/Bitmap2@2x.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    
+      }
+}
 .section5_h1{
     position: absolute;
     top: 134px;
