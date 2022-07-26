@@ -19,7 +19,24 @@
                         fill="#0E8784" />
                 </svg></a>
 
-            <a href="#"> <img src="./img/logo.png" srcset="./img/logo.png 1x, ./img/logo@2x.png 2x " class="logo" alt="logo">
+            
+                <picture>
+                    <source 
+                    media="(min-width: 780px)" 
+                    type="image/webp" 
+                    srcset="
+                    ./img/logo.webp        1x,
+                    ./img/logo@2x.webp     2x, "
+                    >
+                    <source 
+                    media="(min-width: 780px)" 
+                    type="image/png" 
+                    srcset="
+                    ./img/logo.png        1x,
+                    ./img/logo@2x.png     2x, "
+                    >
+                    <img class="logo" src="./img/logo.png" alt="">
+                </picture>
             </a>
             <div class="nav">
                 <ul class="nav__list">
@@ -47,7 +64,20 @@
             <div class="sec__rect"></div>
             <div class="sec2">
                 <div class="box">
-                    <img src="./img/expresso.png" srcset="./img/expresso@2x.png 2x, ./img/expresso.png 1x" alt="expersso">
+                    <picture>
+                        <source media="min-width:780px" type="image/webp"
+                        srcset="
+                        ./img/expresso.webp 1x,
+                        ./img/expresso@2x.webp 2x
+                        
+                        ">
+                        <source media="min-width:780px" type="image/png"
+                        srcset="
+                        ./img/expresso.png 1x,
+                        ./img/expresso@2x.png 2x,
+                        ">
+                        <img src="./img/expresso.png" srcset="./img/expresso@2x.png 2x, ./img/expresso.png 1x" alt="expersso">
+                    </picture>
                     <h3 class="sec2__h3">Gran Espresso</h3>
                     <p class="sec2__p">Light and flavorful blend with cocoa and black pepper for an intense experience.
                     </p>
@@ -188,6 +218,9 @@
         </div>
 
     </footer>
+    
+
+    
 </body>
 
 </html>
